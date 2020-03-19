@@ -1,6 +1,6 @@
 body {
     margin: 4rem 4rem;
-    padding: 0;
+    padding: 0 10rem;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -26,7 +26,6 @@ nav {
 
 nav h1 {
     margin: 1rem;
-    padding: 0;
 }
 
 .menu {
@@ -37,15 +36,14 @@ nav h1 {
 .menu li {
     display: inline-block;
     margin: 0 1rem;
-    padding: 0;
 }
 
-.index {
-    height: 30rem;
+.img-principal {
     background-image: url(../img/jane.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 30rem;
 }
 
 footer {
@@ -122,33 +120,64 @@ footer p {
     align-items: left;
     flex-direction: column;
     height: 65rem;
-    padding: 0 10rem;
 }
 
-.contact h2 {
-    font-size: 2.2rem;
-    font-weight: bold;
+.contact h2, .form-maps, .contacts {
+    padding: 0 8rem;
 }
 
-.contact form *{
-    display: block;
+.form-maps {
+    display: flex;
+    justify-content: space-between;
 }
 
-.contact form button {
-    background-color: #f00000;
-    border: solid #f00000;
+.form-maps iframe {
+    width: 30rem;
+}
+
+.form-maps form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.form-maps form label {
+    margin: 5px 0;
+}
+
+.form-maps form input {
+    border: 1px solid #000000;
     border-radius: 3px;
+    width: 20rem;
+}
+
+.form-maps form textarea {
+    width: 20rem;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.form-maps form div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.form-maps form div input{
+    width: 12px;
+    margin: 10px 4px;
+}
+
+.form-maps form button{
+    background-color: #f08080;
+    border: none;
+    border-color: #f08080;
+    border-radius: 4px;
     color: #ffffff;
     cursor: pointer;
-    width: 5rem;
-}
-
-.contact form, iframe {
-    display: inline-block;
-    width: 49%;
-}
-
-.contact section .border-bottom {
-    border-bottom: solid 1px #e0dede;
-    padding-bottom: 1.5rem;
+    height: 25px;
+    width: 60px;
 }
